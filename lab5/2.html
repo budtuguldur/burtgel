@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <script>
+        function myFunction() {
+            const myCollection = document.getElementsByTagName("table");
+            for (let i = 0; i < myCollection.length; i++) {
+                if (myCollection[i].querySelector(".input-box")) {
+                    // Your code here for tables with the "input-box" class
+                    // For demonstration purposes, let's log a message
+                    console.log("Table with input-box class found!");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form id="registrationForm">
+        <table class="input-box">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <!-- Add more fields as needed -->
+        </table>
+        <br>
+        <button type="button" onclick="myFunction()">Submit</button>
+    </form>
+</body>
+</html>
